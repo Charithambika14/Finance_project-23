@@ -18,7 +18,7 @@ for k=1:MC
    dW = sqrt(h)*randn(1,N);
    W = cumsum(dW);
    t = [0:h:T];
-   plot(t,[0 W],'b-'), hold on
+   plot(t,[0 W],), hold on
 end   
 xlabel('t','FontSize',14);
 ylabel('W(t)','FontSize',14);
